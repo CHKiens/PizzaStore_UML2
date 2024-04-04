@@ -17,7 +17,7 @@ namespace PizzaStore_UML2
         Pizza GetNewPizza()
         {
             Pizza pizzaItem = new Pizza();
-            Console.Clear();
+            
             Console.WriteLine("Creating Pizza");
             Console.WriteLine();
             Console.Write("Enter name: ");
@@ -56,7 +56,7 @@ namespace PizzaStore_UML2
         {
             try
             {
-                Console.Clear();
+                
                 Console.WriteLine("Deleting Pizza");
                 Console.WriteLine();
                 Console.WriteLine("Enter the number of the pizza to delete:");
@@ -117,7 +117,7 @@ namespace PizzaStore_UML2
         {
             try
             {
-                Console.Clear();
+                
                 Console.WriteLine("Updating Pizza");
                 Console.WriteLine();
                 Console.WriteLine("Enter the number of the pizza to update:");
@@ -148,7 +148,7 @@ namespace PizzaStore_UML2
         {
             try
             {
-                Console.Clear();
+                
                 Console.WriteLine("Enter the number of the pizza to search:");
                 int pizzaNumberToSearch = int.Parse(Console.ReadLine());
 
@@ -194,8 +194,10 @@ namespace PizzaStore_UML2
                         Console.WriteLine("Quitting");
                         break;
                     case 1:
+                        Console.Clear();
                         try
                         {
+
                             Pizza pizza = GetNewPizza();
                             _menuCatalog.Create(pizza);
                             Console.WriteLine($"You created: {pizza}");
@@ -208,16 +210,20 @@ namespace PizzaStore_UML2
                         Console.ReadKey();
                         break;
                     case 2:
+                        Console.Clear();
                         Console.WriteLine("Enter the number of the pizza to delete:");
                         DeletePizza(); // Call the method to delete pizza
                         break;
                     case 3:
+                        Console.Clear();
                         UpdatePizza();
                         break;
                     case 4:
+                        Console.Clear();
                         SearchPizza();
                         break;
                     case 5:
+                        Console.Clear();
                         _menuCatalog.PrintMenu();
                         Console.Write("Hit any key to continue");
                         Console.ReadKey();

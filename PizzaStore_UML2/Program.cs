@@ -7,7 +7,10 @@
             Store store = new Store();
             Console.Write("Hit any key to continue with user dialog");
             Console.ReadKey();
-            store.Run();
+            //store.Run();
+            //Uncomment store.Run(); and comment out store.Test(); to run the program without tests
+            store.Test();  
+
         }
     }
 }

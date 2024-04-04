@@ -27,7 +27,7 @@ namespace PizzaStore_UML2
 
         public void PrintMenu()
         {
-            Console.Clear();
+            
             if (_pizzas.Count > 0) {
                 foreach (Pizza p in _pizzas)
                 {
