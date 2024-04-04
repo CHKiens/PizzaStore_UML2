@@ -27,10 +27,14 @@ namespace PizzaStore_UML2
 
         public void PrintMenu()
         {
-            foreach (Pizza p in _pizzas)
-            {
-                Console.WriteLine(p);
-            }
+            Console.Clear();
+            if (_pizzas.Count > 0) {
+                foreach (Pizza p in _pizzas)
+                {
+                    Console.WriteLine(p);
+                }
+            } else { Console.WriteLine("The menu is empty - return to the dialogue tree to add a pizza"); }
+            
 
         }
 

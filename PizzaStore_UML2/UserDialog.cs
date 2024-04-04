@@ -97,7 +97,7 @@ namespace PizzaStore_UML2
                 Console.WriteLine(choice);
             }
 
-            Console.Write("Enter option#: ");
+            Console.Write("Pick a menu option: ");
             string input = Console.ReadKey().KeyChar.ToString();
 
             try
